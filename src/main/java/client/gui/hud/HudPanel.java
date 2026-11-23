@@ -219,7 +219,7 @@ public abstract class HudPanel extends RenderElement {
    }
 
    private void onFloatMatrix4fKeybindEntryFloatIntFloatFloat(float value, Matrix4f matrix4f, KeybindEntry keybindEntry, float value2, int count, float value3, float value4) {
-      float textSize = 12.0F; // Вернули стандартный размер
+      float textSize = 12.0F;
       
       float f3 = TextShader.getFloatByStringFloat(keybindEntry.getText2(), textSize);
       float f = this.getFloatByFloatKeybindEntry(f3, keybindEntry);
@@ -231,7 +231,7 @@ public abstract class HudPanel extends RenderElement {
    }
 
    private static void onFloatKeybindEntryMatrix4fFloatFloat(float value, KeybindEntry keybindEntry, Matrix4f matrix4f, float value2, float value3) {
-      float textSize = 12.0F; // Вернули стандартный размер
+      float textSize = 12.0F;
 
       if (keybindEntry.isFlag()) {
          TextShader.onMatrix4fStringFloatFloatFloatIntFloat2(matrix4f, keybindEntry.getText(), value, value2, textSize, Theme.foreground(), value3);
@@ -335,6 +335,14 @@ public abstract class HudPanel extends RenderElement {
    protected boolean check14() {
       this.update4();
       return !this.list2.isEmpty();
+   }
+
+   @Override
+   protected boolean check23() {
+      return !this.getList3().isEmpty();
+   }
+}
+
    }
 
    @Override
