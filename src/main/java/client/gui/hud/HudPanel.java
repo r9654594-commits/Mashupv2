@@ -40,11 +40,6 @@ public abstract class HudPanel extends RenderElement {
    private long time = -1L;
    private float value276;
 
-   // СТАТИЧЕСКИЙ метод для масштаба
-   protected static float getScale() {
-      return 1.3F; // Увеличение шрифта на 30%
-   }
-
    protected float getFloat28() {
       return 0.0F;
    }
@@ -224,7 +219,7 @@ public abstract class HudPanel extends RenderElement {
    }
 
    private void onFloatMatrix4fKeybindEntryFloatIntFloatFloat(float value, Matrix4f matrix4f, KeybindEntry keybindEntry, float value2, int count, float value3, float value4) {
-      float textSize = 16.0F * getScale();
+      float textSize = 12.0F; // Вернули стандартный размер
       
       float f3 = TextShader.getFloatByStringFloat(keybindEntry.getText2(), textSize);
       float f = this.getFloatByFloatKeybindEntry(f3, keybindEntry);
@@ -236,7 +231,7 @@ public abstract class HudPanel extends RenderElement {
    }
 
    private static void onFloatKeybindEntryMatrix4fFloatFloat(float value, KeybindEntry keybindEntry, Matrix4f matrix4f, float value2, float value3) {
-      float textSize = 16.0F * getScale();
+      float textSize = 12.0F; // Вернули стандартный размер
 
       if (keybindEntry.isFlag()) {
          TextShader.onMatrix4fStringFloatFloatFloatIntFloat2(matrix4f, keybindEntry.getText(), value, value2, textSize, Theme.foreground(), value3);
@@ -343,6 +338,11 @@ public abstract class HudPanel extends RenderElement {
    }
 
    @Override
+   protected boolean check23() {
+      return !this.getList3().isEmpty();
+   }
+}
+ @Override
    protected boolean check23() {
       return !this.getList3().isEmpty();
    }
