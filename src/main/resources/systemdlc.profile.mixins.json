@@ -3,9 +3,10 @@
   "minVersion": "0.8",
   "package": "client.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": [],
   "injectors": {
     "defaultRequire": 1
+  }
+}quire": 1
   }
 }  "defaultRequire": 1
   }
