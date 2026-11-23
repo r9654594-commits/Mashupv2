@@ -342,31 +342,3 @@ public abstract class HudPanel extends RenderElement {
       return !this.getList3().isEmpty();
    }
 }
-
-   }
-
-   @Override
-   protected boolean check23() {
-      return !this.getList3().isEmpty();
-   }
-}
- @Override
-   protected boolean check23() {
-      return !this.getList3().isEmpty();
-   }
-}
-FloatFloatMatrix4fFloat(KeybindEntry keybindEntry, float value, float value2, float value3, Matrix4f matrix4f, float value4) {
-      this.onMatrix4fKeybindEntryFloatFloatFloat(matrix4f, keybindEntry, value3, value4, value);
-   }
-
-   @Override
-   protected boolean check14() {
-      this.update4();
-      return !this.list2.isEmpty();
-   }
-
-   @Override
-   protected boolean check23() {
-      return !this.getList3().isEmpty();
-   }
-}
