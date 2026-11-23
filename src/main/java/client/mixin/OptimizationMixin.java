@@ -16,8 +16,8 @@ public class OptimizationMixin {
 
     @Inject(method = "render", at = @At("HEAD"), cancellable = true)
     private <E extends Entity> void onRender(E entity, double x, double y, double z, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, CallbackInfo ci) {
-        if (SystemClient.getInstance() != null) {
-            Optimization opt = SystemClient.getInstance().getModuleRegistry().getModuleByClass(Optimization.class);
+        if (SystemClient.getInstance() != null && SystemClient.getInstance().getModuleRegistry() != null) {
+            Optimization opt = (Optimization) SystemClient.getInstance().getModuleRegistry().getModuleByClass(Optimization.class);
             if (opt != null && opt.isEnabled() && opt.hideEntities()) {
                 ci.cancel();
             }

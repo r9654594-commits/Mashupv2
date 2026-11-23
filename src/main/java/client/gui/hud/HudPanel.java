@@ -40,8 +40,8 @@ public abstract class HudPanel extends RenderElement {
    private long time = -1L;
    private float value276;
 
-   // Новый метод для масштаба (можно менять)
-   protected float getScale() {
+   // СТАТИЧЕСКИЙ метод для масштаба
+   protected static float getScale() {
       return 1.3F; // Увеличение шрифта на 30%
    }
 
@@ -224,7 +224,6 @@ public abstract class HudPanel extends RenderElement {
    }
 
    private void onFloatMatrix4fKeybindEntryFloatIntFloatFloat(float value, Matrix4f matrix4f, KeybindEntry keybindEntry, float value2, int count, float value3, float value4) {
-      // УВЕЛИЧЕН РАЗМЕР ШРИФТА (было 12.0F)
       float textSize = 16.0F * getScale();
       
       float f3 = TextShader.getFloatByStringFloat(keybindEntry.getText2(), textSize);
@@ -237,7 +236,6 @@ public abstract class HudPanel extends RenderElement {
    }
 
    private static void onFloatKeybindEntryMatrix4fFloatFloat(float value, KeybindEntry keybindEntry, Matrix4f matrix4f, float value2, float value3) {
-      // УВЕЛИЧЕН РАЗМЕР ШРИФТА (было 12.0F)
       float textSize = 16.0F * getScale();
 
       if (keybindEntry.isFlag()) {
@@ -250,9 +248,6 @@ public abstract class HudPanel extends RenderElement {
          TextShader.onIntFloatFloatMatrix4fFloatFloatString(i, value3, value2, matrix4f, value, f, s);
       }
    }
-   
-   // СТАТИЧЕСКИЙ МЕТОД, ЕСЛИ ВЫЗЫВАЕТСЯ ИЗ СТАТИКИ, НО ТУТ ОН НЕ СТАТИЧЕСКИЙ
-   // Если компилятор ругнется на getScale() в статике, сделай getScale() static или передай его явно.
 
    @SafeVarargs
    protected final void addMapArray(Map... map2) {
@@ -338,6 +333,21 @@ public abstract class HudPanel extends RenderElement {
    }
 
    protected void onKeybindEntryFloatFloatFloatMatrix4fFloat(KeybindEntry keybindEntry, float value, float value2, float value3, Matrix4f matrix4f, float value4) {
+      this.onMatrix4fKeybindEntryFloatFloatFloat(matrix4f, keybindEntry, value3, value4, value);
+   }
+
+   @Override
+   protected boolean check14() {
+      this.update4();
+      return !this.list2.isEmpty();
+   }
+
+   @Override
+   protected boolean check23() {
+      return !this.getList3().isEmpty();
+   }
+}
+FloatFloatMatrix4fFloat(KeybindEntry keybindEntry, float value, float value2, float value3, Matrix4f matrix4f, float value4) {
       this.onMatrix4fKeybindEntryFloatFloatFloat(matrix4f, keybindEntry, value3, value4, value);
    }
 
