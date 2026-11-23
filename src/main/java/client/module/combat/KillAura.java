@@ -6,7 +6,6 @@ import client.setting.BooleanSetting;
 import client.setting.ListSetting;
 import client.setting.SliderSetting;
 import client.util.KeyBindings;
-import client.util.TargetSelector;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
@@ -74,7 +73,16 @@ public class KillAura extends Module {
         }
 
         if (target != null) {
-            float[] targetRot = TargetSelector.getRotations(target);
+            // Ручной расчет поворота (замена TargetSelector.getRotations)
+            double diffX = target.getX() - this.player().getX();
+            double diffY = (target.getY() + target.getEyeHeight(target.getPose()) * 0.9) - (this.player().getY() + this.player().getEyeHeight(this.player().getPose()));
+            double diffZ = target.getZ() - this.player().getZ();
+            double dist = Math.sqrt(diffX * diffX + diffZ * diffZ);
+            
+            float[] targetRot = new float[2];
+            targetRot[0] = (float) Math.toDegrees(Math.atan2(diffZ, diffX)) - 90.0F;
+            targetRot[1] = (float) -Math.toDegrees(Math.atan2(diffY, dist));
+
             String mode = (String)this.rotationMode.getList3().getFirst();
             
             float speed = (float) (this.rotationSpeed.getValue() / 10.0f);
@@ -82,24 +90,20 @@ public class KillAura extends Module {
             // Обработка разных ротаций
             switch (mode) {
                 case "Shard":
-                    // Плавно ведем камеру
                     this.currentYaw += (targetRot[0] - this.currentYaw) / speed;
                     this.currentPitch += (targetRot[1] - this.currentPitch) / speed;
                     break;
                 case "SpookyTime":
-                    // Очень плавно (античит)
                     this.currentYaw += (targetRot[0] - this.currentYaw) / (speed * 2.0f);
                     this.currentPitch += (targetRot[1] - this.currentPitch) / (speed * 2.0f);
                     break;
                 case "FunTime":
-                    // Быстрый снап с микро-задержкой
                     if (Math.abs(targetRot[0] - this.currentYaw) > 5.0f) {
                         this.currentYaw = targetRot[0];
                     }
                     this.currentPitch = targetRot[1];
                     break;
                 case "SkyTime":
-                    // Мгновенно
                     this.currentYaw = targetRot[0];
                     this.currentPitch = targetRot[1];
                     break;
@@ -118,7 +122,6 @@ public class KillAura extends Module {
                     this.client().interactionManager.attackEntity(this.player(), target);
                     this.player().swingHand(Hand.MAIN_HAND);
                     
-                    // Разная задержка удара под сервера
                     if (mode.equals("Shard")) this.attackCooldown = 8;
                     else if (mode.equals("SpookyTime")) this.attackCooldown = 12;
                     else if (mode.equals("FunTime")) this.attackCooldown = 5;
@@ -126,7 +129,6 @@ public class KillAura extends Module {
                 }
             }
         } else {
-            // Если цели нет, плавно возвращаем камеру
             if (this.player() != null) {
                 this.currentYaw = this.player().getYaw();
                 this.currentPitch = this.player().getPitch();

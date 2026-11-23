@@ -3,7 +3,6 @@ package client.module.client;
 import client.api.Theme;
 import client.concurrent.SystemClient;
 import client.gui.widget.RenderElement;
-import client.gui.widget.UiContext;
 import client.module.Feature;
 import client.module.Module;
 import client.render.ShapeShader;
@@ -11,6 +10,7 @@ import client.render.TextShader;
 import client.setting.BooleanSetting;
 import net.minecraft.client.gui.DrawContext;
 import org.joml.Matrix4f;
+import org.lwjgl.glfw.GLFW;
 import java.util.List;
 
 public class ModuleScrollerHud extends RenderElement {
@@ -25,33 +25,22 @@ public class ModuleScrollerHud extends RenderElement {
     }
 
     @Override
-    public String getString() {
-        return "Модули (Листалка)";
-    }
+    public String getString() { return "Модули (Листалка)"; }
 
     @Override
-    public String getString3() {
-        return "scroller";
-    }
+    public String getString3() { return "scroller"; }
 
     @Override
-    public float getFloat9() {
-        return 40.0F;
-    }
+    public float getFloat9() { return 40.0F; }
 
     @Override
-    public float getFloat10() {
-        return 150.0F;
-    }
+    public float getFloat10() { return 150.0F; }
 
     @Override
-    protected boolean isHudModule(HudModule hudModule) {
-        return true;
-    }
+    protected boolean isHudModule(HudModule hudModule) { return true; }
 
     @Override
-    protected void onHudModuleBoolean(HudModule hudModule, boolean flag) {
-    }
+    protected void onHudModuleBoolean(HudModule hudModule, boolean flag) {}
 
     @Override
     protected void onFloatDrawContextMatrix4fFloat(float value, DrawContext drawContext, Matrix4f matrix4f, float value2) {
@@ -86,24 +75,24 @@ public class ModuleScrollerHud extends RenderElement {
         float pageWidth = TextShader.getFloatByStringFloat(pageText, 10.0F);
         TextShader.onFloatFloatIntFloatFloatStringMatrix4f(x + (w - pageWidth) / 2.0F, y + h / 2.0F + 8.0F, Theme.mutedFg(), 10.0F, value * value2, pageText, matrix4f);
 
-        long time = UiContext.getTime();
         if (Feature.mc.currentScreen == null) {
-            boolean isHovered = UiContext.isMouseOver(x, y, w, h);
+            // Получаем реальные координаты мыши (с учетом масштаба окна)
             double mouseX = Feature.mc.mouse.getX();
             double mouseY = Feature.mc.mouse.getY();
-            
             double scaledMouseX = mouseX * Feature.mc.getWindow().getScaledWidth() / Feature.mc.getWindow().getWidth();
             double scaledMouseY = mouseY * Feature.mc.getWindow().getScaledHeight() / Feature.mc.getWindow().getHeight();
 
             boolean overPanel = scaledMouseX >= x && scaledMouseX <= x + w && scaledMouseY >= y && scaledMouseY <= y + h;
 
-            if (overPanel) {
-                if (Feature.mc.mouse.wasLeftButtonClicked() || Feature.mc.mouse.wasRightButtonClicked()) {
-                    currentModule.toggle();
-                }
+            // Используем GLFW для проверки нажатия
+            long handle = Feature.mc.getWindow().getHandle();
+            boolean isLeftPressed = GLFW.glfwGetMouseButton(handle, GLFW.GLFW_MOUSE_BUTTON_LEFT) == GLFW.GLFW_PRESS;
+
+            if (overPanel && !isLeftPressed && !isTouching) {
+                // Одиночный клик (просто тапнули)
             }
 
-            if (Feature.mc.mouse.isLeftButtonPressed()) {
+            if (isLeftPressed) {
                 if (!isTouching && overPanel) {
                     isTouching = true;
                     lastTouchX = (float) scaledMouseX;
@@ -121,7 +110,13 @@ public class ModuleScrollerHud extends RenderElement {
                     }
                 }
             } else {
-                isTouching = false;
+                if (isTouching) {
+                    // Если отпустили палец, и он не сдвинулся сильно — считаем это кликом
+                    isTouching = false;
+                    if (Math.abs((float) scaledMouseX - lastTouchX) < 10.0F && overPanel) {
+                        currentModule.toggle();
+                    }
+                }
             }
         }
     }
