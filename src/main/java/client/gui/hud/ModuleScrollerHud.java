@@ -1,4 +1,4 @@
-package client.gui.hud;
+package client.module.client;
 
 import client.api.Theme;
 import client.concurrent.SystemClient;
@@ -6,7 +6,6 @@ import client.gui.widget.RenderElement;
 import client.gui.widget.UiContext;
 import client.module.Feature;
 import client.module.Module;
-import client.module.client.HudModule;
 import client.render.ShapeShader;
 import client.render.TextShader;
 import client.setting.BooleanSetting;
@@ -140,6 +139,10 @@ public class ModuleScrollerHud extends RenderElement {
                 }
             } else {
                 isTouching = false;
+            }
+        }
+    }
+};
             }
         }
     }
