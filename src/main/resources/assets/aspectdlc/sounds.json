@@ -1,0 +1,47 @@
+{
+  "module_enable": {
+    "subtitle": "Module enabled",
+    "category": "master",
+    "sounds": [
+      "aspectdlc:module_enable"
+    ]
+  },
+  "module_disable": {
+    "subtitle": "Module disabled",
+    "category": "master",
+    "sounds": [
+      "aspectdlc:module_disable"
+    ]
+  },
+  "celestial_enable": {
+    "subtitle": "Celestial enabled",
+    "category": "master",
+    "sounds": [
+      "aspectdlc:celestial_enable"
+    ]
+  },
+  "celestial_disable": {
+    "subtitle": "Celestial disabled",
+    "category": "master",
+    "sounds": [
+      "aspectdlc:celestial_disable"
+    ]
+  },
+  "enablealarm": {
+    "subtitle": "Cooldown Alarm",
+    "category": "master",
+    "sounds": [
+      "aspectdlc:enablealarm"
+    ]
+  },
+  "spek": {
+    "subtitle": "Spek detected",
+    "category": "master",
+    "sounds": [
+      {
+        "name": "aspectdlc:spek",
+        "stream": false
+      }
+    ]
+  }
+}

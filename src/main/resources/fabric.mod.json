@@ -1,29 +1,37 @@
 {
-  "schemaVersion": 1,
-  "id": "systemdlcrecovered",
-  "version": "1.0.0",
-  "name": "SystemDLC Recovered",
-  "environment": "client",
-  "entrypoints": {
-    "preLaunch": [
-      "recovered.fabric.nativebridge.SystemDlcPreLaunch"
-    ],
-    "client": [
-      "client.util.ClientEntrypoint"
-    ]
-  },
-  "mixins": [
-    "systemdlc.profile.mixins.json",
-    "systemdlc.diagnostic.mixins.json"
-  ],
-  "jars": [
-    {
-      "file": "liminar-mod.jar"
-    }
-  ],
-  "depends": {
-    "fabricloader": ">=0.16.10",
-    "minecraft": "=1.21.4",
-    "java": ">=21"
-  }
+	"schemaVersion": 1,
+	"id": "aspectdlc",
+	"version": "${version}",
+	"name": "AspectDLC",
+	"description": "best dlc",
+	"authors": [
+		"whylol, prince"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/aspectdlc/icon.png",
+	"environment": "*",
+	"jars": [
+		{
+			"file": "META-INF/jars/baritone-standalone-fabric-1.13.1.jar"
+		}
+	],
+	"entrypoints": {
+		"main": [
+			"dev.leg1tka.AspectDLC::INSTANCE"
+		]
+	},
+	"mixins": [
+		"aspectdlc.mixins.json"
+	],
+	"accessWidener": "aspectdlc.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
 }

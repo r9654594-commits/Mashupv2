@@ -1,0 +1,800 @@
+{
+  "atlas": {
+    "type": "msdf",
+    "distanceRange": 6,
+    "size": 56,
+    "width": 512,
+    "height": 256,
+    "yOrigin": "top"
+  },
+  "metrics": {
+    "emSize": 1,
+    "lineHeight": 1.0714285714285714,
+    "ascender": 0.9464285714285714,
+    "descender": -0.125,
+    "underlineY": -0.1,
+    "underlineThickness": 0.05
+  },
+  "glyphs": [
+    {
+      "unicode": 61441,
+      "name": "dropdown_boolean_on_toggle_right",
+      "advance": 1,
+      "planeBounds": {
+        "left": -0.017857142857142856,
+        "bottom": -0.5357142857142857,
+        "right": 1,
+        "top": 0.16071428571428573
+      },
+      "atlasBounds": {
+        "left": 0,
+        "bottom": 217,
+        "right": 57,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61442,
+      "name": "dropdown_boolean_off_toggle_left",
+      "advance": 1,
+      "planeBounds": {
+        "left": -0.017857142857142856,
+        "bottom": -0.5357142857142857,
+        "right": 1,
+        "top": 0.16071428571428573
+      },
+      "atlasBounds": {
+        "left": 58,
+        "bottom": 217,
+        "right": 115,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61456,
+      "name": "notify_warning_alert_triangle",
+      "advance": 1,
+      "planeBounds": {
+        "left": -0.017857142857142856,
+        "bottom": -0.8928571428571429,
+        "right": 1,
+        "top": 0.017857142857142856
+      },
+      "atlasBounds": {
+        "left": 0,
+        "bottom": 165,
+        "right": 57,
+        "top": 216
+      }
+    },
+    {
+      "unicode": 61471,
+      "name": "hud_keybinds_keyboard",
+      "advance": 1,
+      "planeBounds": {
+        "left": -0.017857142857142856,
+        "bottom": -0.5357142857142857,
+        "right": 1,
+        "top": 0.16071428571428573
+      },
+      "atlasBounds": {
+        "left": 58,
+        "bottom": 177,
+        "right": 115,
+        "top": 216
+      }
+    },
+    {
+      "unicode": 61460,
+      "name": "media_prev_player_track_prev",
+      "advance": 1,
+      "planeBounds": {
+        "left": -0.017857142857142856,
+        "bottom": -0.6428571428571429,
+        "right": 0.9821428571428571,
+        "top": 0.125
+      },
+      "atlasBounds": {
+        "left": 58,
+        "bottom": 133,
+        "right": 114,
+        "top": 176
+      }
+    },
+    {
+      "unicode": 61463,
+      "name": "media_next_player_track_next",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.017857142857142856,
+        "bottom": -0.6428571428571429,
+        "right": 1.0178571428571428,
+        "top": 0.125
+      },
+      "atlasBounds": {
+        "left": 115,
+        "bottom": 133,
+        "right": 171,
+        "top": 176
+      }
+    },
+    {
+      "unicode": 61440,
+      "name": "dropdown_color_droplet",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.10714285714285714,
+        "bottom": -0.9107142857142857,
+        "right": 0.875,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 116,
+        "bottom": 203,
+        "right": 159,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61444,
+      "name": "category_player_user_circle",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 160,
+        "bottom": 203,
+        "right": 213,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61447,
+      "name": "category_combat_swords",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 172,
+        "bottom": 149,
+        "right": 225,
+        "top": 202
+      }
+    },
+    {
+      "unicode": 61448,
+      "name": "action_delete_trash",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.07142857142857142,
+        "bottom": -0.9107142857142857,
+        "right": 0.9285714285714286,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 0,
+        "bottom": 111,
+        "right": 48,
+        "top": 164
+      }
+    },
+    {
+      "unicode": 61451,
+      "name": "reserve_staff_shield",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 172,
+        "bottom": 95,
+        "right": 225,
+        "top": 148
+      }
+    },
+    {
+      "unicode": 61452,
+      "name": "reserve_render_eye",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.5357142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.16071428571428573
+      },
+      "atlasBounds": {
+        "left": 0,
+        "bottom": 55,
+        "right": 53,
+        "top": 94
+      }
+    },
+    {
+      "unicode": 61453,
+      "name": "reserve_movement_bolt",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.10714285714285714,
+        "bottom": -0.9107142857142857,
+        "right": 0.875,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 0,
+        "bottom": 1,
+        "right": 43,
+        "top": 54
+      }
+    },
+    {
+      "unicode": 61455,
+      "name": "reserve_cooldowns_hourglass",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.16071428571428573,
+        "bottom": -0.9107142857142857,
+        "right": 0.8571428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 214,
+        "bottom": 203,
+        "right": 253,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61457,
+      "name": "notify_success_circle_check",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 44,
+        "bottom": 1,
+        "right": 97,
+        "top": 54
+      }
+    },
+    {
+      "unicode": 61458,
+      "name": "notify_info_info_circle",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 98,
+        "bottom": 79,
+        "right": 151,
+        "top": 132
+      }
+    },
+    {
+      "unicode": 61459,
+      "name": "notify_disable_circle_x",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 98,
+        "bottom": 25,
+        "right": 151,
+        "top": 78
+      }
+    },
+    {
+      "unicode": 61465,
+      "name": "hud_watermark_server_world",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 152,
+        "bottom": 41,
+        "right": 205,
+        "top": 94
+      }
+    },
+    {
+      "unicode": 61466,
+      "name": "hud_watermark_fps_gauge",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 206,
+        "bottom": 41,
+        "right": 259,
+        "top": 94
+      }
+    },
+    {
+      "unicode": 61467,
+      "name": "hud_watermark_account_user",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.16071428571428573,
+        "bottom": -0.9107142857142857,
+        "right": 0.8571428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 54,
+        "bottom": 79,
+        "right": 93,
+        "top": 132
+      }
+    },
+    {
+      "unicode": 61468,
+      "name": "hud_target_hp_heart",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.7678571428571429,
+        "right": 0.9821428571428571,
+        "top": 0.08928571428571429
+      },
+      "atlasBounds": {
+        "left": 226,
+        "bottom": 154,
+        "right": 279,
+        "top": 202
+      }
+    },
+    {
+      "unicode": 61469,
+      "name": "hud_staff_users_group",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 254,
+        "bottom": 203,
+        "right": 307,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61470,
+      "name": "hud_potions_flask_2",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.16071428571428573,
+        "bottom": -0.9107142857142857,
+        "right": 0.8571428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 226,
+        "bottom": 100,
+        "right": 265,
+        "top": 153
+      }
+    },
+    {
+      "unicode": 61472,
+      "name": "hud_cooldowns_clock_hour_4",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 260,
+        "bottom": 46,
+        "right": 313,
+        "top": 99
+      }
+    },
+    {
+      "unicode": 61473,
+      "name": "dropdown_theme_palette",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 266,
+        "bottom": 100,
+        "right": 319,
+        "top": 153
+      }
+    },
+    {
+      "unicode": 61474,
+      "name": "dropdown_settings_generic_settings",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 314,
+        "bottom": 46,
+        "right": 367,
+        "top": 99
+      }
+    },
+    {
+      "unicode": 61475,
+      "name": "dropdown_search_search",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.9107142857142857,
+        "right": 0.9821428571428571,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 308,
+        "bottom": 203,
+        "right": 361,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61476,
+      "name": "dropdown_configs_file_settings",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.10714285714285714,
+        "bottom": -0.9107142857142857,
+        "right": 0.875,
+        "top": 0.03571428571428571
+      },
+      "atlasBounds": {
+        "left": 320,
+        "bottom": 149,
+        "right": 363,
+        "top": 202
+      }
+    },
+    {
+      "unicode": 61443,
+      "name": "category_render_sparkles",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.7678571428571429,
+        "right": 0.9285714285714286,
+        "top": 0.08928571428571429
+      },
+      "atlasBounds": {
+        "left": 320,
+        "bottom": 100,
+        "right": 370,
+        "top": 148
+      }
+    },
+    {
+      "unicode": 61445,
+      "name": "category_movement_feather",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.07142857142857142,
+        "bottom": -0.7678571428571429,
+        "right": 0.9285714285714286,
+        "top": 0.08928571428571429
+      },
+      "atlasBounds": {
+        "left": 362,
+        "bottom": 208,
+        "right": 410,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61446,
+      "name": "category_misc_layout_dashboard",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.07142857142857142,
+        "bottom": -0.7678571428571429,
+        "right": 0.9285714285714286,
+        "top": 0.08928571428571429
+      },
+      "atlasBounds": {
+        "left": 364,
+        "bottom": 159,
+        "right": 412,
+        "top": 207
+      }
+    },
+    {
+      "unicode": 61454,
+      "name": "reserve_misc_apps",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.07142857142857142,
+        "bottom": -0.7678571428571429,
+        "right": 0.9285714285714286,
+        "top": 0.08928571428571429
+      },
+      "atlasBounds": {
+        "left": 411,
+        "bottom": 208,
+        "right": 459,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61461,
+      "name": "media_play_player_play",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.17857142857142858,
+        "bottom": -0.7678571428571429,
+        "right": 0.9285714285714286,
+        "top": 0.08928571428571429
+      },
+      "atlasBounds": {
+        "left": 460,
+        "bottom": 208,
+        "right": 502,
+        "top": 256
+      }
+    },
+    {
+      "unicode": 61464,
+      "name": "media_fallback_music",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.03571428571428571,
+        "bottom": -0.7678571428571429,
+        "right": 0.8928571428571429,
+        "top": 0.08928571428571429
+      },
+      "atlasBounds": {
+        "left": 368,
+        "bottom": 51,
+        "right": 416,
+        "top": 99
+      }
+    },
+    {
+      "unicode": 61449,
+      "name": "action_back_arrow_left",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.10714285714285714,
+        "bottom": -0.5357142857142857,
+        "right": 0.875,
+        "top": 0.16071428571428573
+      },
+      "atlasBounds": {
+        "left": 152,
+        "bottom": 1,
+        "right": 195,
+        "top": 40
+      }
+    },
+    {
+      "unicode": 61450,
+      "name": "action_add_plus",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.10714285714285714,
+        "bottom": -0.6428571428571429,
+        "right": 0.875,
+        "top": 0.125
+      },
+      "atlasBounds": {
+        "left": 260,
+        "bottom": 2,
+        "right": 303,
+        "top": 45
+      }
+    },
+    {
+      "unicode": 61462,
+      "name": "media_pause_player_pause",
+      "advance": 1,
+      "planeBounds": {
+        "left": 0.16071428571428573,
+        "bottom": -0.6428571428571429,
+        "right": 0.8571428571428571,
+        "top": 0.125
+      },
+      "atlasBounds": {
+        "left": 280,
+        "bottom": 159,
+        "right": 319,
+        "top": 202
+      }
+    }
+  ],
+  "icons": [
+    {
+      "name": "dropdown_color_droplet",
+      "codePoint": 61440
+    },
+    {
+      "name": "dropdown_boolean_on_toggle_right",
+      "codePoint": 61441
+    },
+    {
+      "name": "dropdown_boolean_off_toggle_left",
+      "codePoint": 61442
+    },
+    {
+      "name": "category_render_sparkles",
+      "codePoint": 61443
+    },
+    {
+      "name": "category_player_user_circle",
+      "codePoint": 61444
+    },
+    {
+      "name": "category_movement_feather",
+      "codePoint": 61445
+    },
+    {
+      "name": "category_misc_layout_dashboard",
+      "codePoint": 61446
+    },
+    {
+      "name": "category_combat_swords",
+      "codePoint": 61447
+    },
+    {
+      "name": "action_delete_trash",
+      "codePoint": 61448
+    },
+    {
+      "name": "action_back_arrow_left",
+      "codePoint": 61449
+    },
+    {
+      "name": "action_add_plus",
+      "codePoint": 61450
+    },
+    {
+      "name": "reserve_staff_shield",
+      "codePoint": 61451
+    },
+    {
+      "name": "reserve_render_eye",
+      "codePoint": 61452
+    },
+    {
+      "name": "reserve_movement_bolt",
+      "codePoint": 61453
+    },
+    {
+      "name": "reserve_misc_apps",
+      "codePoint": 61454
+    },
+    {
+      "name": "reserve_cooldowns_hourglass",
+      "codePoint": 61455
+    },
+    {
+      "name": "notify_warning_alert_triangle",
+      "codePoint": 61456
+    },
+    {
+      "name": "notify_success_circle_check",
+      "codePoint": 61457
+    },
+    {
+      "name": "notify_info_info_circle",
+      "codePoint": 61458
+    },
+    {
+      "name": "notify_disable_circle_x",
+      "codePoint": 61459
+    },
+    {
+      "name": "media_prev_player_track_prev",
+      "codePoint": 61460
+    },
+    {
+      "name": "media_play_player_play",
+      "codePoint": 61461
+    },
+    {
+      "name": "media_pause_player_pause",
+      "codePoint": 61462
+    },
+    {
+      "name": "media_next_player_track_next",
+      "codePoint": 61463
+    },
+    {
+      "name": "media_fallback_music",
+      "codePoint": 61464
+    },
+    {
+      "name": "hud_watermark_server_world",
+      "codePoint": 61465
+    },
+    {
+      "name": "hud_watermark_fps_gauge",
+      "codePoint": 61466
+    },
+    {
+      "name": "hud_watermark_account_user",
+      "codePoint": 61467
+    },
+    {
+      "name": "hud_target_hp_heart",
+      "codePoint": 61468
+    },
+    {
+      "name": "hud_staff_users_group",
+      "codePoint": 61469
+    },
+    {
+      "name": "hud_potions_flask_2",
+      "codePoint": 61470
+    },
+    {
+      "name": "hud_keybinds_keyboard",
+      "codePoint": 61471
+    },
+    {
+      "name": "hud_cooldowns_clock_hour_4",
+      "codePoint": 61472
+    },
+    {
+      "name": "dropdown_theme_palette",
+      "codePoint": 61473
+    },
+    {
+      "name": "dropdown_settings_generic_settings",
+      "codePoint": 61474
+    },
+    {
+      "name": "dropdown_search_search",
+      "codePoint": 61475
+    },
+    {
+      "name": "dropdown_configs_file_settings",
+      "codePoint": 61476
+    }
+  ],
+  "kerning": []
+}

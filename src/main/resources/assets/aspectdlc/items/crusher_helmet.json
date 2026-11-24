@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "aspectdlc:item/crusher_helmet"
+  },
+  "oversized_in_gui": true
+}

@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "aspectdlc:item/tal_demon_simple"
+  },
+  "oversized_in_gui": true
+}

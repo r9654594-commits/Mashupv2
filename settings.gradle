@@ -1,8 +1,13 @@
 pluginManagement {
-    repositories {
-        maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
-        gradlePluginPortal()
-    }
+	repositories {
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
 }
 
-rootProject.name = 'system-source'
+// Should match your modid
+rootProject.name = 'aspectdlc'
